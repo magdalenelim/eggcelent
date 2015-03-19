@@ -1,0 +1,133 @@
+.blackHole {
+    background-color: black;
+    opacity: .8;
+    z-index: 50;
+    width: 3000px;
+    height: 3000px;
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bigContain {
+    width: 1180px;
+    margin-right: auto;
+    margin-left: auto;
+    vertical-align: middle;
+}
+
+.personContain {
+    width: 235px;
+    height: 275px;
+    position: relative;
+    float: left;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+}
+
+.imageContain {
+    height:235px;
+    width:235px;
+    position:relative;
+    background: black;
+    text-align: center;
+    line-height: 30px;
+}
+
+.info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.profilePic {    
+    position:absolute;
+    left:0;
+    top:0;
+    width: 235px;
+    height: 235px;
+}
+
+.blurb {
+    z-index:100;
+    position:absolute;    
+    color:white;
+    font-size:16px;
+    /*font-weight:bold;*/
+    left:30px;
+    right: 30px;
+    /*vertical-align: middle;*/
+    visibility: hidden;
+}
+
+.imageContain:hover .blurb{
+    visibility: visible;
+}
+
+.imageContain:hover .profilePic {
+    opacity: .2;
+}
+
+/*.imageContain:hover .giantBlackHole{
+    visibility: visible;
+    display: block;
+}*/
+
+
+/*COPIED FROM INTERNET*/
+.container {
+    height:400px;
+    width:1000px;
+    margin-right: auto;
+    margin-left: auto;
+    display:block;
+}
+
+.container:hover {
+    color: #768192;
+    -webkit-filter: opacity(.9) contrast(0.8) brightness(0.9);
+}
+
+#image {
+    display: block;
+    height: 400px;
+    top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-filter: grayscale(100%) brightness(0.3) contrast(0.9);
+}
+
+.text {
+    z-index:100;
+    position:absolute;    
+    color: white;
+    font-size:24px;
+    top:90px;
+    width: 800px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: Helvetica, sans-serif;
+}
+
+.textTwo {
+    z-index:100;
+    position:absolute;    
+    color:white;
+    font-size:24px;
+    top:600px;
+    width: 800px;
+/*    margin-right: auto;
+    margin-left: auto;*/
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: Helvetica, sans-serif;
+}
+
+.title{
+    font-family: Helvetica, sans-serif;
+    font-size: 50px;
+    margin-left: 100px;
+}
+
