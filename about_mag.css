@@ -63,13 +63,42 @@
 
 .core {
 	position: relative;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	margin-right: 10%;
 	margin-left: 10%;
 }
 
 .person {
-	height: 250px;
-	border: 1px solid blue;
+	/*height: 250px;*/
+	/*border: 1px solid blue;*/
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
 }
+
+.personContain {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.img-contain {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.blurb {
+	z-index: 100;
+	position: absolute;
+	font-size: 16px;
+	left: 30px;
+	right: 30px;
+	visibility: hidden;
+	top: 30px;
+}
+
+.img-contain:hover .blurb {
+	visibility: visible;
+}
+
 
