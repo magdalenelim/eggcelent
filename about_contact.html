@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="jquery.maskedinput.min.js" type="text/javascript"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h1>Contact</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<h3>Email</h3>
+				<p>hardboiledmagazine@gmail.com</p>
+				<hr>
+				<h3>University Address</h3>
+				<p>University of California</br> 112 Hearst Gym, MC 4520 </br> Berkeley, CA 94720-4500</p>
+				<hr>
+			</div>
+			<div class="col-md-6">
+				<form action="MAILTO:rob.v.rodriguez@gmail.com" method="post" enctype="text/plain">
+					<div class="input-group">
+						<h3>Name</h3>
+					  	<span class="input-group-button" id="basic-addon1"></span>
+					 	<input type="text" name="name" Placeholder="Your Name" class="form-control" aria-describedby="basic-addon1">
+					 </div>
+					<div class="input-group">
+						<h3>Phone Number</h3>
+						<h4><font color="gray">(Optional)</font></h4>
+					  	<span class="input-group-button" id="basic-addon1"></span>
+					 	<input type="text"  class="form-control phone" name="Phone Number" Placeholder="Phone Number" aria-describedby="basic-addon1">
+					</div>
+					<div class="input-group">
+						<h3>Your Email</h3>
+					  	<span class="input-group-button" id="basic-addon1"></span>
+					 	<input type="text" class="form-control" name="Your Email" placeholder="Your Email" aria-describedby="basic-addon1">
+					</div>
+					<div class="input-group">
+						<h3>How can we help?</h3>
+					  	<span class="input-group-button" id="basic-addon1"></span>
+					 	<input type="text" class="form-control" name="help" placeholder="Join, Subscribe, Contact" aria-describedby="basic-addon1">
+					</div>
+					
+					<h3>Comments</h3>
+					<div><textarea class="form-control" name="message" rows="3"></textarea></div>
+					<div><button type="submit" value="send" class="btn btn-default">Submit</button></div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		jQuery(function($){
+		   $("#date").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
+		   $(".phone").mask("(999) 999-9999");
+		   $("#tin").mask("99-9999999");
+		   $("#ssn").mask("999-99-9999");
+		});
+	</script>
+</body>
+</html>
