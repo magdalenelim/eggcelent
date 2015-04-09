@@ -88,9 +88,29 @@
 		font-size: 30px;
 	}
 	
-	.title {
-	
+	.ms-label {
+		padding: 0px;
+		text-align: center;
+		font-size: 50px;
 	}
+	
+	.ms-descr {
+		padding-left: 10%;
+		padding-right: 10%;
+		text-align: center;
+		width: 100%;
+	}
+	
+	/*
+	.ms-label {
+		font-size: 40px;
+		padding-left: 25%;
+	}
+
+	.ms-descr {
+		font-size: 20px;
+		margin-right: 20%;
+	}*/
 }
 
 .personContain {
