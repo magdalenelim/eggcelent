@@ -7,16 +7,19 @@
   background-size: cover;
   font-family: Arial, sans-serif;
   font-size: 50px;
+  display: table;
+  	width: 100%;
+	height: 100%;
   /*background-attachment: scroll;*/
 }
 
 
 .title {
 	/*position: absolute;*/
-	padding-top: 20%;
-	width: 100%;
-	height: 100%;
+
 	background-color: transparent;
+	display: table-cell;
+	vertical-align: middle;
 }
 /*.header {
 	font-family: Arial, sans-serif;
@@ -36,7 +39,6 @@
 .header-line2 {
 	position: relative; 
 	padding-left: 20%;
-	padding-bottom: 20%;
 }
 
 .mission-statement {
@@ -79,6 +81,20 @@
 
 .person:hover .flipper, .person.hover .flipper {
 	transform: rotateY(180deg);
+
+@media only screen and (max-width: 1024px) {
+	.header {
+		font-size: 30px;
+	}
+	
+	.title {
+	
+	}
+}
+
+.personContain {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .flipper {
@@ -107,16 +123,7 @@
 	transform: rotateY(180deg);
 }
 
-.img-contain, .blurb {
-	backface-visibility: hidden;
 
-	position: absolute;
-	/*top: 0;*/
-	/*left: 0;*/
-}
-
-/*.img-contain:hover .blurb {
+.img-contain:hover .blurb {
 	visibility: visible;
-}*/
-
-
+}
