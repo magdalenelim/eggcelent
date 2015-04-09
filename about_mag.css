@@ -74,17 +74,25 @@
 	margin-left: auto;
 	margin-right: auto;
 	vertical-align: middle;
+	perspective: 1000;
 }
 
-.personContain {
-	margin-left: auto;
-	margin-right: auto;
+.person:hover .flipper, .person.hover .flipper {
+	transform: rotateY(180deg);
 }
+
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
 
 .img-contain {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	transform: rotateY(0deg);
 }
 
 .blurb {
@@ -93,12 +101,22 @@
 	font-size: 16px;
 	left: 30px;
 	right: 30px;
-	visibility: hidden;
+	/*visibility: hidden;*/
 	top: 30px;
+	text-align: center;
+	transform: rotateY(180deg);
 }
 
-.img-contain:hover .blurb {
-	visibility: visible;
+.img-contain, .blurb {
+	backface-visibility: hidden;
+
+	position: absolute;
+	/*top: 0;*/
+	/*left: 0;*/
 }
+
+/*.img-contain:hover .blurb {
+	visibility: visible;
+}*/
 
 
