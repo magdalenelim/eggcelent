@@ -116,14 +116,14 @@
 
 .giantContain {
     overflow: hidden;
-    max-width: 675px;
+    max-width: 1200px;
     margin-left: auto;
     text-align: center;
     margin-right: auto;
 }
 
 .personContain {
-    height: 220px;
+    height: 300px;
     position: relative;
     vertical-align: middle;
     display: inline-block;
@@ -135,8 +135,8 @@
 }
 
 .imageContain {
-    height:175px;
-    width:175px;
+    height:250px;
+    width:250px;
     position:relative;
     background: black;
     text-align: center;
@@ -165,8 +165,8 @@
     position:absolute;
     left:0;
     top:0;
-    width: 175px;
-    height: 175px;
+    width: 250px;
+    height: 250px;
     -webkit-transition: all 600ms ease;
     -moz-transition: all 600ms ease;
     -ms-transition: all 600ms ease;
@@ -177,7 +177,7 @@
 .blurb {
     position:absolute;    
     color: rgba(0,0,0,0);
-    font-size:12px;
+    font-size:14px;
     left:20px;
     font-family: "Open Sans";
     font-weight: 300;
@@ -193,6 +193,13 @@
     -ms-transition: all 600ms ease;
     -o-transition: all 600ms ease;
     transition: all 600ms ease;
+}
+
+.core-text {
+	font-size: 100px;
+	color: #fff;
+	padding-top: 195px;
+	text-align: right;
 }
 
 .imageContain:hover .blurb{
