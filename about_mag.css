@@ -225,3 +225,23 @@
     transition: all 600ms ease;
 
 }
+
+#contact {
+	width: 100%;
+	padding-top: 60px;
+	padding-bottom: 100px;
+	text-align:center;
+}
+
+#contact a:link, a:visited, a:active {
+	font-size: 75px;
+	padding: 30px;
+	border: 3px solid #3399CC;
+	border-radius: 20px;
+}
+
+#contact a:hover {
+	text-decoration: none;
+	background: #3399CC;
+	color: #fff;
+}
