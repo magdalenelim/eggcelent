@@ -148,3 +148,108 @@
 .img-contain:hover .blurb {
 	visibility: visible;
 }
+
+.giantContain {
+    overflow: hidden;
+    max-width: 675px;
+    margin-left: auto;
+    text-align: center;
+    margin-right: auto;
+}
+
+.personContain {
+    height: 220px;
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    margin-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imageContain {
+    height:175px;
+    width:175px;
+    position:relative;
+    background: black;
+    text-align: center;
+    line-height: 20px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.imageContain img {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.info {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.profilePic {    
+    position:absolute;
+    left:0;
+    top:0;
+    width: 175px;
+    height: 175px;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.blurb {
+    position:absolute;    
+    color: rgba(0,0,0,0);
+    font-size:12px;
+    left:20px;
+    font-family: "Open Sans";
+    font-weight: 300;
+    right: 20px;
+    visibility: hidden;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select:none;
+    -webkit-user-select:none;
+    -o-user-select:none;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.imageContain:hover .blurb{
+    visibility: visible;
+    color: white;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+     user-select: none;
+    -moz-user-select: none;
+    -ms-user-select:none;
+    -webkit-user-select:none;
+}
+
+.imageContain:hover .profilePic {
+    opacity: 0.2;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+
+}
