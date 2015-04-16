@@ -12,9 +12,17 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	
+	<style>
+		body {
+			background-color: #1E8BC3;
+			color:white
+		}
+		a:link {
+			color: #22313F;
+		}
+	</style>
 </head>
-<body>
+<body text="white">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
@@ -24,7 +32,7 @@
 		<div class="row">
 			<div class="col-md-6">
 				<h3>Email</h3>
-				<p><a href="mailto:hardboiledmagazine@gmail.com?Subject=Hello" target="_top">hardboiledmagazine@gmail.com</a></p>
+				<h4><a href="mailto:hardboiledmagazine@gmail.com?Subject=Hello" target="_top">hardboiledmagazine@gmail.com</a></h4>
 				<hr>
 				<h3>University Address</h3>
 				<p>University of California</br> 112 Hearst Gym, MC 4520 </br> Berkeley, CA 94720-4500</p>
@@ -39,7 +47,7 @@
 					 </div>
 					<div class="input-group">
 						<h3>Phone Number</h3>
-						<h4><font color="gray">(Optional)</font></h4>
+						<h4><font color=#EEEEEE>(Optional)</font></h4>
 					  	<span class="input-group-button" id="basic-addon1"></span>
 					 	<input type="text"  class="form-control phone" name="Phone Number" Placeholder="Phone Number" aria-describedby="basic-addon1">
 					</div>
@@ -56,6 +64,7 @@
 					
 					<h3>Comments</h3>
 					<div><textarea class="form-control" name="message" rows="3"></textarea></div>
+					<p></p>
 					<div><button type="submit" value="send" class="btn btn-default">Submit</button></div>
 				</form>
 			</div>
